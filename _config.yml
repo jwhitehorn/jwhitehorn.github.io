@@ -1,0 +1,12 @@
+markdown: redcarpet
+pygments: true
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+
+name: Jason Whitehorn
+url: http://jason.whitehorn.ws
+description: A fantastic blog that is fantastic.
+twitter: holman
+github: jwhitehorn
+gravatar_url: http://www.gravatar.com/avatar/c9d040cf4cadc8eb1b739b6f99735ec8.png
