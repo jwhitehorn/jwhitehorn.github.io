@@ -1,8 +1,19 @@
 ---
-layout: landing
-title: About
+layout: default
+title: Welcome
 ---
-<section class="content">
+<section class="content">  
+  <h1>Recent Posts</h1>
+  
+  <ul class="listing">
+    {% for post in site.posts %}
+    <li>
+      <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+    {% endfor %}
+  </ul>  
+  
   <h1>About Me</h1>
   <p>
     My name is Jason Whitehorn and I'm a software developer, a husband, and a father. I enjoy developing with technologies ranging from Objective-C and Java to Javascript, Ruby and Go.
